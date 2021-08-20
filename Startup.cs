@@ -53,7 +53,7 @@ namespace EmployeeManagement
             //Run is a terminal middleware (produces response and pipeline reverses)
             app.Run(async (context) =>
             {
-                await context.Response.WriteAsync("Hosting environment: " + env.EnvironmentName);
+                await context.Response.WriteAsync("Hosting environment is: " + env.EnvironmentName);
             });
         }
     }
